@@ -2,6 +2,8 @@ import {useState} from "react";
 import MovieList from "../components/MovieList";
 
 const MovieBox = () => {
+
+
     const initialState = 
     [
         {
@@ -31,11 +33,14 @@ const MovieBox = () => {
       ];
       
       const [movies, setMovies] = useState(initialState);
+
       
       return (
           <>
           <h1>Upcoming Movies:</h1>
           <MovieList movies ={movies}/> 
+          <br></br><br></br>
+          <a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases</a>
           </>
         );
 }
