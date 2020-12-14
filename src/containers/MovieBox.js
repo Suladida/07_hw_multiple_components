@@ -1,4 +1,5 @@
 import {useState} from "react";
+import MovieList from "../components/MovieList";
 
 const MovieBox = () => {
     const initialState = 
@@ -34,7 +35,7 @@ const MovieBox = () => {
       return (
           <>
           <h1>Upcoming Movies:</h1>
-          <MovieList /> 
+          <MovieList movies ={movies}/> 
           </>
         );
 }
