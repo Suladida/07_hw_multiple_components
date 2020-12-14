@@ -33,7 +33,6 @@ const MovieBox = () => {
       ];
       
       const [movies, setMovies] = useState(initialState);
-
       
       return (
           <>
